@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+<div id="home-banner">
+	<img id="home-logo" src="{{ site.baseurl }}/assets/logo.svg" alt="Torrent Player icon">
+
+	<h2>Stream torrents directly from your browser</h2>
+</div>
+
+<hr>
+
+<form id="magnet-input">
+	<input name="torrentId" placeholder="magnet:"><button type="submit">Play</button>
+</form>
+
+<div id="hero">
+	<div id="output">
+		<div id="progressBar"></div>
+		<!-- The video player will be added here -->
+	</div>
+
+	<!-- Statistics -->
+	<div id="status">
+		<div>
+			<span class="show-leech">Downloading </span>
+			<span class="show-seed">Seeding </span>
+			<code id="streamedFileName"></code>
+			<span class="show-leech"> from </span>
+			<span class="show-seed"> to </span>
+			<code id="numPeers">0 peers</code>
+		</div>
+
+		<div>
+			<code id="downloaded"></code> of <code id="total"></code> - <span id="remaining"></span>
+		</div>
+
+		<div>
+			&#x2193; <code id="downloadSpeed">0 b/s</code> / <code id="uploadSpeed">0 b/s</code> &#x2191;
+		</div>
+
+		<div id="share-clipboard">
+			<p>Share this video:</p>
+			<input id="share-url" type="text" readonly><button id="share-url-btn" class="btn" type="button" data-toggle="tooltip" title="Copy to clipboard" data-clipboard-target="#share-url"><img class="clippy" src="{{ site.baseurl }}/assets/clippy.svg" alt="Copy to clipboard"></button>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<blockquote>
+	<p>What should I write in the input box above?</p>
+</blockquote>
+
+<h4>Find a torrent you want to watch, then copy-paste one of the following into the input box:</h4>
+
+<ul>
+	<li>magnet uri (string)</li>
+	<li>torrent file (buffer)</li>
+	<li>info hash (hex string or buffer)</li>
+	<li>parsed torrent (from parse-torrent)</li>
+	<li>http/https url to a torrent file (string)</li>
+</ul>
+
+<blockquote>
+	<p>Can you give an example?</p>
+</blockquote>
+
+<h4>Sure! Try <em>copy-pasting</em> this https url of a torrent to the input box:</h4>
+
+<pre>https://webtorrent.io/torrents/sintel.torrent</pre>

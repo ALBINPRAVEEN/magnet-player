@@ -1,0 +1,22 @@
+{
+  "name": "torrent-player",
+  "description": "Video streaming directly from your browser",
+  "version": "1.0.1",
+  "author": {
+    "name": "Henrique Ferrolho",
+    "email": "henrique.ferrolho@gmail.com",
+    "url": "http://albinpraveen.is-a.deb/"
+  },
+  "dependencies": {
+    "clipboard": "^1.5.12",
+    "moment": "^2.15.0",
+    "pretty-bytes": "^4.0.2"
+  },
+  "homepage": "https://albinpraveen.is-a.dev/magnet-player/",
+  "keywords": [
+    "data channel",
+    "file transfer",
+    "p2p",
+    "webrtc"
+  ]
+}
