@@ -26,4 +26,3 @@ Because most people use native torrent clients like *BitTorrent*, *Transmission*
 
 **Yes!** It is just a matter of time until developers add WebTorrent support for the most popular native torrent clients. **[Vuze](http://www.vuze.com/)** [already has support](https://wiki.vuze.com/w/WebTorrent) for WebTorrent!
 
-You can subscribe to [this issue](https://github.com/feross/webtorrent/issues/369) for updates on this matter.
